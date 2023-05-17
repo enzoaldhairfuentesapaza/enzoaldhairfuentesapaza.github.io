@@ -1,5 +1,145 @@
-*{
+*
+{
     margin:0;
     padding: 0;
     box-sizing: border-box;
+}
+body
+{
+    font-family: 'open sans';
+}
+
+.contenedor
+{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo
+{
+    color:lightcoral;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* HEADER https://uigradients.com/#WitchingHour */
+
+header
+{
+    width: 100%;
+    height: 630px;
+    background: #FFA17F;
+    background: -webkit-linear-gradient(to right, hsla(207, 100%, 12%, 0.767), hsla(16, 100%, 75%, 0.562)), url(../IMAGENES/Foto.jpeg);
+    background: linear-gradient(to right, hsla(207, 100%, 12%, 0.767), hsla(16, 100%, 75%, 0.562)), url(../IMAGENES/Foto.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* Indices */
+nav
+{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+
+nav > a
+{
+    color:white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+/* Indices, cuando pase el mouse */
+nav > a:hover
+{
+    font-weight: 800;
+    color: darkred;
+    text-decoration: underline;
+}
+
+header .textos-header
+{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1
+{
+    font-size: 50px;
+    color: whitesmoke;
+
+}
+
+.textos-header h2
+{
+    font-size: 30px;
+    font-weight: 300;
+    color: whitesmoke;
+    
+}
+
+.wape
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.contenedor-sobre-nosotros
+{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.imagen-about-us
+{
+    width: 45%;
+}
+
+.sobre-nosotros .contenido-textos
+{
+    width: 50%;
+}
+
+.contenido-textos h3
+{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span
+{
+    background: darkred;
+    color: whitesmoke;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 5);
+    margin-right: 5px;
+}
+
+.contenido-textos p
+{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.portafolio
+{
+    background: lightcyan;
 }
