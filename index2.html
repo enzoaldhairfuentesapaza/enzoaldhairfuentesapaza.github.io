@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Valentín</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffcccc;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .message {
+            font-size: 28px;
+            font-weight: bold;
+            color: #d63384;
+        }
+        .buttons {
+            margin-top: 20px;
+            position: relative;
+        }
+        button {
+            font-size: 20px;
+            padding: 12px 24px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            transition: 0.3s ease-in-out;
+        }
+        #yes {
+            background-color: #ff69b4;
+            color: white;
+        }
+        #no {
+            background-color: #ff4d4d;
+            color: white;
+            position: absolute;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+            overflow: auto;
+            padding: 20px;
+        }
+        .popup {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #d63384;
+        }
+        .letter {
+            margin-top: 20px;
+            background: #f4e1c6;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            font-family: 'Cedarville Cursive', cursive;
+            font-size: 18px;
+            max-width: 500px;
+            text-align: left;
+            border: 2px solid #8b5a2b;
+            overflow-y: auto;
+            max-height: 60vh;
+        }
+        .show {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="message">¿Quieres ser mi San Valentín?</div>
+        <div class="buttons">
+            <button id="yes">SÍ</button>
+            <button id="no">NO</button>
+        </div>
+    </div>
+    <div id="response" class="overlay">
+        <div class="popup">¡SABÍA QUE DIRÍAS QUE SÍ! ❤️</div>
+        <div class="letter">
+            Quería escribirte porque hay cosas que a veces no se dicen en voz alta, pero que merecen ser dichas. Me gusta estar contigo, me gusta cuando jugamos, me gusta escucharte, me gusta escucharte cantar, me gusta cuando intentas enojarte pero no puedes, me gustan tus cambios de humor tan repentinos aunque sea raro xd, y sobre todo me gusta como eres cuando jugamos, cuando no te guardas nada. Me gusta que seas tan sensible, pero que, a pesar de todo, siempre encuentres la manera de sonreír. Aunque no me gusta que lo sobrelleves sola… lo entiendo.<br><br>
+            También me gusta escucharte dormir y escucharte despertar, porque siempre que nos dormimos en llamada logro despertarme antes que tu sin que te des cuenta.<br><br>
+            Sé que todavía no nos conocemos tanto como nos gustaría por la distancia, pero quiero hacerlo. Y aunque pueda ser un poco arriesgado, quiero que tengamos más confianza, que esto crezca y que, poco a poco, la distancia importe menos.<br><br>
+            Aquí sigo, contigo.
+        </div>
+    </div>
+    <script>
+        const noButton = document.getElementById("no");
+        const yesButton = document.getElementById("yes");
+        const response = document.getElementById("response");
+        const buttonsContainer = document.querySelector(".buttons");
+
+        function moveNoButton() {
+            const maxX = buttonsContainer.clientWidth - noButton.clientWidth;
+            const maxY = buttonsContainer.clientHeight - noButton.clientHeight;
+            const x = Math.random() * maxX;
+            const y = Math.random() * maxY;
+            noButton.style.left = `${x}px`;
+            noButton.style.top = `${y}px`;
+        }
+
+        noButton.addEventListener("mouseover", moveNoButton);
+        noButton.addEventListener("click", moveNoButton);
+
+        yesButton.addEventListener("click", () => {
+            response.classList.add("show");
+        });
+    </script>
+</body>
+</html>
