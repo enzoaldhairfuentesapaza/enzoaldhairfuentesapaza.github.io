@@ -1,141 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>San Valentín</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #ffcccc;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            text-align: center;
-            overflow: hidden;
-        }
-        .container {
-            position: relative;
-            background: white;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        }
-        .message {
-            font-size: 28px;
-            font-weight: bold;
-            color: #d63384;
-        }
-        .buttons {
-            margin-top: 20px;
-            position: relative;
-        }
-        button {
-            font-size: 20px;
-            padding: 12px 24px;
-            margin: 10px;
-            cursor: pointer;
-            border: none;
-            border-radius: 10px;
-            transition: 0.3s ease-in-out;
-        }
-        #yes {
-            background-color: #ff69b4;
-            color: white;
-        }
-        #no {
-            background-color: #ff4d4d;
-            color: white;
-            position: absolute;
-        }
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: rgba(0, 0, 0, 0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            visibility: hidden;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-            overflow: auto;
-            padding: 20px;
-        }
-        .popup {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-            color: #d63384;
-        }
-        .letter {
-            margin-top: 20px;
-            background: #f4e1c6;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            font-family: 'Cedarville Cursive', cursive;
-            font-size: 18px;
-            max-width: 500px;
-            text-align: left;
-            border: 2px solid #8b5a2b;
-            overflow-y: auto;
-            max-height: 60vh;
-        }
-        .show {
-            visibility: visible;
-            opacity: 1;
-        }
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>TE AMO</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: black;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    canvas {
+      display: block;
+    }
+
+    .floating-text {
+      position: absolute;
+      color: #ff3366;
+      font-size: 22px;
+      font-weight: bold;
+      pointer-events: none;
+      animation: floatUp 1.5s ease-out forwards;
+      text-shadow: 0 0 5px white;
+    }
+
+    @keyframes floatUp {
+      0% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-80px) scale(1.5);
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="message">¿Quieres ser mi San Valentín?</div>
-        <div class="buttons">
-            <button id="yes">SÍ</button>
-            <button id="no">NO</button>
-        </div>
-    </div>
-    <div id="response" class="overlay">
-        <div class="popup">¡SABÍA QUE DIRÍAS QUE SÍ! ❤️</div>
-        <div class="letter">
-            Quería escribirte porque hay cosas que a veces no se dicen en voz alta, pero que merecen ser dichas. Me gusta estar contigo, me gusta cuando jugamos, me gusta escucharte, me gusta escucharte cantar, me gusta cuando intentas enojarte pero no puedes, me gustan tus cambios de humor tan repentinos aunque sea raro xd, y sobre todo me gusta como eres cuando jugamos, cuando no te guardas nada. Me gusta que seas tan sensible, pero que, a pesar de todo, siempre encuentres la manera de sonreír. Aunque no me gusta que lo sobrelleves sola… lo entiendo.<br><br>
-            También me gusta escucharte dormir y escucharte despertar, porque siempre que nos dormimos en llamada logro despertarme antes que tu sin que te des cuenta.<br><br>
-            Sé que todavía no nos conocemos tanto como nos gustaría por la distancia, pero quiero hacerlo. Y aunque pueda ser un poco arriesgado, quiero que tengamos más confianza, que esto crezca y que, poco a poco, la distancia importe menos.<br><br>
-            Aquí sigo, contigo.
-        </div>
-    </div>
-    <script>
-        const noButton = document.getElementById("no");
-        const yesButton = document.getElementById("yes");
-        const response = document.getElementById("response");
-        const buttonsContainer = document.querySelector(".buttons");
+  <canvas id="canvas"></canvas>
 
-        function moveNoButton() {
-            const maxX = buttonsContainer.clientWidth - noButton.clientWidth;
-            const maxY = buttonsContainer.clientHeight - noButton.clientHeight;
-            const x = Math.random() * maxX;
-            const y = Math.random() * maxY;
-            noButton.style.left = `${x}px`;
-            noButton.style.top = `${y}px`;
+  <script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+    canvas.width = width;
+    canvas.height = height;
+
+    const phrase = "TE AMO ";
+    const fontSize = 18;
+    let columns = Math.floor(width / fontSize);
+    let drops = Array(columns).fill(1);
+
+    function draw() {
+      // Fondo semitransparente para efecto de estela
+      ctx.fillStyle = "rgba(0, 0, 0, 0.2)";
+      ctx.fillRect(0, 0, width, height);
+
+      const gradient = ctx.createLinearGradient(0, 0, width, height);
+      gradient.addColorStop(0, "#ff4d6d");
+      gradient.addColorStop(0.5, "#ff99aa");
+      gradient.addColorStop(1, "#ff1a66");
+
+      ctx.fillStyle = gradient;
+      ctx.font = fontSize + "px 'Segoe UI', Arial";
+
+      for (let i = 0; i < drops.length; i++) {
+        ctx.fillText(phrase, i * fontSize, drops[i] * fontSize);
+
+        if (drops[i] * fontSize > height && Math.random() > 0.975) {
+          drops[i] = 0;
         }
 
-        noButton.addEventListener("mouseover", moveNoButton);
-        noButton.addEventListener("click", moveNoButton);
+        drops[i]++;
+      }
 
-        yesButton.addEventListener("click", () => {
-            response.classList.add("show");
-        });
-    </script>
+      requestAnimationFrame(draw);
+    }
+
+    draw();
+
+    // Redimensionar y regenerar columnas
+    window.addEventListener('resize', () => {
+      width = window.innerWidth;
+      height = window.innerHeight;
+      canvas.width = width;
+      canvas.height = height;
+      columns = Math.floor(width / fontSize);
+      drops = Array(columns).fill(1);
+    });
+
+    // Al hacer clic: mostrar "TE AMO" flotante
+    document.addEventListener('click', (e) => {
+      const text = document.createElement('div');
+      text.className = 'floating-text';
+      text.innerText = 'MILY';
+      text.style.left = e.clientX + 'px';
+      text.style.top = e.clientY + 'px';
+      document.body.appendChild(text);
+
+      setTimeout(() => {
+        text.remove();
+      }, 1500);
+    });
+  </script>
 </body>
 </html>
