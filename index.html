@@ -1,26 +1,153 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>En Obras</title>
-    <style>
-        body {
-            background-color: #222;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.5em;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Enzo Fuentes | Software e Inteligencia Artificial</title>
+  <meta name="description" content="Soy Enzo Aldhair Fuentes Apaza. Trabajo con entornos web y adapto soluciones al dominio de cada proyecto. Soy autodidacta, disfruto los retos y combino razonamiento, creatividad y colaboración.">
+  <meta name="theme-color" content="#142e37">
+  <meta property="og:title" content="Enzo Fuentes | Software e Inteligencia Artificial">
+  <meta property="og:description" content="Proyectos, investigación y las ideas que me mueven. Desde Arequipa, Perú.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="personality.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>🚧 En obras 🚧<br><br>
-    El usuario además de migajero también es flojo 😴</h1>
+<a class="skip" href="#principal">Ir al contenido</a>
+<header>
+  <nav class="nav wrap" aria-label="Navegación principal">
+    <a class="brand personal-name" href="#inicio" aria-label="Enzo Fuentes, inicio"><span>Enzo Fuentes<small>Código, música y curiosidad.</small></span></a>
+    <button class="menu-toggle" aria-controls="navlinks" aria-expanded="false">Menú <span aria-hidden="true">☰</span></button>
+    <div class="navlinks" id="navlinks">
+      <a href="#proyectos">Proyectos</a><a href="#habilidades">Habilidades</a><a href="#trayectoria">Trayectoria</a><a href="#personal">Más sobre mí</a><a href="#contacto">Conversemos ↗</a>
+    </div>
+  </nav>
+</header>
+<main id="principal">
+  <section class="hero wrap" id="inicio" aria-labelledby="hero-title">
+    <div class="hero-grid">
+      <div>
+        <div class="location"><span class="hello-wave" aria-hidden="true">✋</span> Hola desde Arequipa, Perú</div>
+        <span class="eyebrow">Desarrollo de software / Investigación en IA</span>
+        <h1 id="hero-title">Entender el<br>problema.<br><em>Crear la solución.</em></h1>
+        <p class="intro">Soy <strong>Enzo Aldhair Fuentes Apaza</strong>. Trabajo con entornos web y disfruto adaptar soluciones al dominio de cada proyecto: entender cómo funciona una empresa y ayudar a automatizar sus procesos.</p>
+        <p class="hero-personality">Soy autodidacta, aprendo rápido y me gusta asumir retos. Combino el análisis lógico con la creatividad, y valoro tanto una buena solución como la manera de construirla en equipo.</p>
+        <div class="hero-actions"><a class="btn" href="#proyectos">Explorar proyectos <span aria-hidden="true">↘</span></a><a class="btn ghost" href="assets/CV_Enzo_Fuentes_Profesional.pdf" download>Descargar CV <span aria-hidden="true">↓</span></a></div>
+        <p class="hero-note">Siempre hay un problema nuevo que vale la pena entender.</p>
+      </div>
+      <div class="portrait-side">
+        <div class="orbit" aria-hidden="true"></div>
+        <figure class="portrait-frame" style="margin:0">
+          <img src="assets/enzo.jpeg" alt="Enzo Fuentes con lentes y una casaca verde" width="899" height="1599" fetchpriority="high">
+          <figcaption class="portrait-caption"><strong>Enzo Fuentes</strong><span>Arequipa / Perú</span></figcaption>
+          <div class="portrait-label">Un poco de lógica.<br>Un poco de imaginación.<small>Y muchas ganas de aprender</small></div>
+        </figure>
+      </div>
+    </div>
+    <div class="hero-strip">
+      <span><span class="small-index">01</span><strong>Software</strong> que llega a producción</span>
+      <span><span class="small-index">02</span><strong>IA</strong> que puedo investigar</span>
+      <span><span class="small-index">03</span><strong>Creatividad</strong> dentro y fuera del código</span>
+    </div>
+  </section>
+
+  <section class="section work" id="proyectos" aria-labelledby="work-title">
+    <div class="wrap">
+      <div class="section-head"><div><span class="eyebrow">01 / Trabajo seleccionado</span><h2 id="work-title">De una idea<br>a un sistema.</h2></div><p>Proyectos comerciales, investigación y experimentos académicos. Cada uno me ha permitido resolver un problema distinto.</p></div>
+      <div class="featured-grid">
+        <article class="feature">
+          <div class="feature-visual commerce" aria-label="Flujo de la plataforma comercial: catálogo, cotización y administración">
+            <div class="visual-top"><span>DH & DM</span><span>Plataforma comercial</span></div>
+            <div class="commerce-title">Maquinaria. Repuestos.<br><span>Una gestión conectada.</span></div>
+            <div class="flow"><span>Catálogo</span><b aria-hidden="true">→</b><span>Cotización</span><b aria-hidden="true">→</b><span>Administración</span></div>
+          </div>
+          <div class="feature-body">
+            <div class="feature-head"><span class="eyebrow">Desarrollo para cliente</span><span class="status"><i class="dot" aria-hidden="true"></i>En producción</span></div>
+            <h3>DH & DM Maquinarias</h3>
+            <p>Un sitio comercial con catálogos, cotizaciones y un panel para gestionar productos, contenido y permisos.</p>
+            <div class="project-labels"><div class="area-tags"><span>Desarrollo web</span><span>Software empresarial</span><span>Bases de datos</span></div><div class="language-tags"><span>TypeScript</span><span>JavaScript</span><span>PHP</span><span>SQL</span><span>HTML</span><span>CSS</span></div></div>
+            <div class="feature-actions"><button class="detail-trigger" data-project="dh-dm">Conocer el proyecto ↗</button><a href="https://www.dh-dm-maquinarias.com/" target="_blank" rel="noopener noreferrer">Visitar sitio ↗</a></div>
+          </div>
+        </article>
+        <article class="feature">
+          <div class="feature-visual xai-visual">
+            <div class="visual-top"><span>IA explicable / MRI 3D</span><span>BraTS2020</span></div>
+            <div class="xai-stats"><div><strong>0.74</strong><small>Grad-CAM 3D</small><div class="metric-bar"><i style="width:74%"></i></div></div><div><strong>0.48</strong><small>LIME 3D</small><div class="metric-bar"><i style="width:48%;background:#869c88"></i></div></div></div>
+            <p class="xai-caption">Fidelidad de Spearman · Promedio de 20 muestras</p>
+          </div>
+          <div class="feature-body">
+            <div class="feature-head"><span class="eyebrow">Investigación académica</span><span class="status">Experimento</span></div>
+            <h3>Entender una segmentación 3D</h3>
+            <p>Comparación de Grad-CAM y LIME sobre una 3D U-Net: fidelidad de las explicaciones y costo de cómputo.</p>
+            <div class="project-labels"><div class="area-tags"><span>IA explicable (XAI)</span><span>Deep Learning</span><span>Visión por computador</span></div><div class="language-tags"><span>Python</span></div></div>
+            <div class="feature-actions"><button class="detail-trigger" data-project="xai">Leer el proyecto ↗</button><a href="https://github.com/enzoaldhairfuentesapaza/Implementacion-de-metodos-post-hoc-de-interpretabilidad-en-la-segmentacion-3D-de-tumores-cerebrales" target="_blank" rel="noopener noreferrer">Ver código ↗</a></div>
+          </div>
+        </article>
+        <article class="feature storage-feature">
+          <div class="storage-visual"><div class="visual-top"><span>Sistema empresarial</span><span>En desarrollo</span></div><div class="storage-schematic" aria-label="Módulos del sistema"><span>Inventario / Kardex</span><span>Compras / Ventas</span><span>Clientes / Proveedores</span><span>Roles / Sedes</span></div></div>
+          <div class="feature-body"><div class="feature-head"><span class="eyebrow">Proyecto actual</span><span class="status"><i class="dot work" aria-hidden="true"></i>En desarrollo</span></div><h3>Sistema de Almacenamiento Inteligente</h3><p>Gestión de operaciones empresariales con una base para análisis, pronósticos y consultas con IA. La integración de IA continúa en desarrollo.</p><div class="project-labels"><div class="area-tags"><span>Software empresarial</span><span>Bases de datos</span><span>Analítica</span></div><div class="language-tags"><span>Python</span><span>TypeScript</span><span>SQL</span><span>HTML</span><span>CSS</span></div></div><div class="feature-actions"><button class="detail-trigger" data-project="almacenamiento">Explorar el alcance ↗</button></div></div>
+        </article>
+      </div>
+      <div class="catalogue">
+        <div class="catalogue-title"><h3>Todos mis proyectos</h3><p id="project-count" aria-live="polite">14 proyectos · 4 áreas de exploración</p></div>
+        <div class="catalogue-controls">
+          <div class="filters" aria-label="Filtrar proyectos"><button type="button" data-filter="all" aria-pressed="true">Todos</button><button type="button" data-filter="web" aria-pressed="false">Web y aplicaciones</button><button type="button" data-filter="ia" aria-pressed="false">Inteligencia artificial</button><button type="button" data-filter="sistemas" aria-pressed="false">Sistemas</button><button type="button" data-filter="grafica" aria-pressed="false">Gráficos y juegos</button></div>
+          <label class="search"><span class="sr-only">Buscar proyecto o tecnología</span><input id="project-search" type="search" placeholder="Proyecto o tecnología…" autocomplete="off"><span aria-hidden="true">⌕</span></label>
+        </div>
+        <div class="project-grid" id="project-grid"></div>
+        <noscript><p>Consulta la lista completa en <a href="assets/Proyectos_Enzo_Fuentes.md" download>el catálogo de proyectos</a>.</p></noscript>
+        <div class="catalogue-bottom"><button class="btn ghost" id="show-all" type="button">Ver los 14 proyectos ↓</button><a class="text-link" href="assets/Proyectos_Enzo_Fuentes.md" download>Descargar lista con descripciones y enlaces ↓</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section skills" id="habilidades" aria-labelledby="skills-title">
+    <div class="wrap">
+      <div class="section-head"><div><span class="eyebrow light">02 / Herramientas y conocimientos</span><h2 id="skills-title">Lo que uso<br>para construir.</h2></div><p>Mi formación conecta desarrollo de aplicaciones, fundamentos de sistemas e investigación experimental.</p></div>
+      <div class="skill-grid">
+        <div class="skill-col"><span class="skill-num">01.</span><h3>Desarrollo web</h3><p>Interfaces, APIs y flujos de negocio que conectan datos con personas.</p><ul><li>React · TypeScript · Vite</li><li>Python · FastAPI · PHP</li><li>HTML · CSS · JavaScript</li><li>MySQL · PostgreSQL</li></ul></div>
+        <div class="skill-col"><span class="skill-num">02.</span><h3>Inteligencia artificial</h3><p>Preparación de datos, entrenamiento y evaluación de modelos y explicaciones.</p><ul><li>PyTorch · scikit-learn</li><li>NumPy · pandas · SciPy</li><li>3D U-Net · Random Forest</li><li>Grad-CAM · LIME</li></ul></div>
+        <div class="skill-col"><span class="skill-num">03.</span><h3>Sistemas y gráficos</h3><p>Comprender los mecanismos detrás de la comunicación, los datos y las imágenes.</p><ul><li>C++ · C · Python</li><li>UDP · Sockets · RDT</li><li>OpenGL · GLSL</li><li>Clojure · Programación funcional</li></ul></div>
+        <div class="skill-col"><span class="skill-num">04.</span><h3>Flujo de trabajo</h3><p>Documentar, versionar y llevar las ideas a una implementación revisable.</p><ul><li>Git · GitHub · Docker</li><li>Postman · Insomnia</li><li>LaTeX · Overleaf</li><li>Flutter · Dart</li></ul></div>
+      </div>
+      <div class="language-inventory"><div><span class="eyebrow light">Lenguajes con los que he trabajado</span><p>Distintas herramientas para distintos problemas.</p></div><div class="language-cloud"><span>Python</span><span>C++</span><span>JavaScript</span><span>TypeScript</span><span>PHP</span><span>Dart</span><span>Clojure</span><span>SQL</span><span>GLSL</span><span>HTML</span><span>CSS</span></div></div>
+      <p class="skills-note">También he trabajado con <strong>C, R y ensamblador</strong> durante mi formación. Español nativo · <strong>Inglés intermedio.</strong></p>
+    </div>
+  </section>
+
+  <section class="section" id="trayectoria" aria-labelledby="path-title">
+    <div class="wrap">
+      <div class="section-head"><div><span class="eyebrow">03 / Formación y recorrido</span><h2 id="path-title">Aprender haciendo.</h2></div><p>Una trayectoria que une mérito académico, investigación y participación en proyectos.</p></div>
+      <div class="path-grid">
+        <div class="academic"><img class="academic-logo" src="assets/ucsp.png" width="43" height="43" alt="Emblema de la Universidad Católica San Pablo" loading="lazy"><p class="academic-date">2022 - ACTUALIDAD · AREQUIPA</p><h3>Ciencia de la Computación</h3><p>Universidad Católica San Pablo</p><p>Estudios de pregrado en curso.</p><hr><strong>Beca San Pablo</strong><p>Beca por mérito académico.</p><p class="award-note">Cinco diplomas de primer puesto promocional, según mi historial académico.</p></div>
+        <div class="timeline">
+          <article class="milestone"><time>En curso</time><div><h3>Investigación en IA explicable</h3><p>Desarrollo una tesis sobre <em>dependencia distribucional y estabilidad explicativa en modelos de segmentación 3D multimodal de MRI</em>, con asesoría de Rosa Paccotacya. El trabajo parte de revisión de literatura, reproducción y experimentos con 3D U-Net, Grad-CAM y LIME.</p></div></article>
+          <article class="milestone"><time>2025</time><div><h3>PhawAI + TaReCDa</h3><p>Seleccionado para la fase presencial del Workshop Internacional de Investigación en Inteligencia Artificial. Presenté el proyecto <em>AI Agroclimatic System for Risk Prediction</em>, con una propuesta que combina LSTM, CNN y atención.</p><a href="https://www.phawai.org/phawai-tarecda-25/becarios" target="_blank" rel="noopener noreferrer">Ver selección oficial ↗</a></div></article>
+          <article class="milestone"><time>2024 / 2025</time><div><h3>NASA Space Apps Challenge</h3><p>Participación en las ediciones de Arequipa: explorar datos y construir soluciones en un entorno de colaboración.</p><a href="https://drive.google.com/file/d/1Hy0gJvHx9-GPP7bq6CjFlJjyKJGsF8q_/view?usp=sharing" target="_blank" rel="noopener noreferrer">Constancia 2024 ↗</a><span aria-hidden="true"> · </span><a href="https://drive.google.com/file/d/1t6Isrzp2DikXYOAc_XICdmxYAnrEK31l/view?usp=sharing" target="_blank" rel="noopener noreferrer">Constancia 2025 ↗</a></div></article>
+          <article class="milestone"><time>2023</time><div><h3>Hackathon Innova Sur</h3><p>Finalista. Una oportunidad para desarrollar ideas y trabajar en equipo frente a un reto concreto.</p></div></article>
+        </div>
+      </div>
+      <details class="earlier"><summary>Mis primeros pasos: ciencia, arte y liderazgo escolar</summary><p>Estudié en la I.E. 40164 José Carlos Mariátegui entre 2017 y 2021. Antes de la universidad, ya encontraba espacios para aprender, crear y asumir responsabilidades.</p><ul><li>Presidente del club de ciencias Antonio Brack Egg y brigadier general en 2021.</li><li>Primer puesto en el torneo escolar virtual de ajedrez de 2021.</li><li>Primeros puestos escolares en arte, ajedrez, instrumentos musicales y debate en 2020.</li><li>Participación en ONEM, ferias Eureka, robótica y programación con Scratch.</li><li>Cuarto puesto regional en PESCActívate 2021.</li><li>Participación en Revolución STEAM Bicentenario 2021.</li></ul></details>
+    </div>
+  </section>
+
+  <section class="section personal" id="personal" aria-labelledby="personal-title">
+    <div class="wrap"><span class="eyebrow">04 / Más allá del código</span><h2 id="personal-title">Lo que también<br>me mueve.</h2><p class="personal-intro">La computación es una parte importante de mi vida. La música, el ajedrez, la creatividad y mi fe también forman parte de quién soy y de cómo me relaciono con los demás.</p>
+      <div class="working-style"><span class="eyebrow">Cómo me gusta trabajar</span><h3>Con iniciativa, curiosidad<br>y espacio para las ideas.</h3><p>Me gusta entender el dominio de un problema antes de proponer una solución. Aprendo por mi cuenta, conozco mis fortalezas y también sé cuándo necesito investigar o pedir apoyo. Los retos nuevos me motivan: disfruto conectar ideas y encontrar una respuesta que encaje con el contexto.</p><p>Me siento cómodo tomando la iniciativa y ayudando a organizar a un equipo. Procuro mantener una actitud positiva, escuchar otras perspectivas y facilitar acuerdos. En lo profesional valoro el análisis y las decisiones razonadas; en mi forma de ser hay también mucha libertad, creatividad y espontaneidad.</p></div>
+      <div class="personal-grid">
+        <article class="interest"><span class="interest-icon" aria-hidden="true">♪</span><div><h3>La música</h3><p>El bajo es mi instrumento principal. También toco guitarra acústica y batería; he tocado zampoña y flauta dulce, y disfruto cantar. Formé parte de una banda de música latinoamericana y suelo tocar música cristiana juvenil en eventos.</p></div></article>
+        <article class="interest"><span class="interest-icon" aria-hidden="true">♞</span><div><h3>El ajedrez</h3><p>Durante años dediqué mucho tiempo a jugar y resolver posiciones. Fui primer puesto en concursos escolares de ajedrez en 2020 y 2021. Mi antigua cuenta de Lichess conserva parte de ese recorrido.</p><a href="https://lichess.org/@/Enzo_Fuentes" target="_blank" rel="noopener noreferrer">Mi antigua cuenta de Lichess ↗</a></div></article>
+        <article class="interest"><span class="interest-icon" aria-hidden="true">✎</span><div><h3>Pintar y escribir</h3><p>Me gusta pintar y escribir. Son espacios donde puedo observar con calma, imaginar y expresar ideas de otra manera.</p></div></article>
+        <article class="interest"><span class="interest-icon" aria-hidden="true">✧</span><div><h3>Fe y comunidad</h3><p>Soy líder de jóvenes de la DEPEC en la Iglesia Evangélica Peruana y en mi iglesia SEC Jorge Chávez. Mi fe me anima a servir, acompañar a otros y aportar a mi comunidad.</p></div></article>
+      </div>
+      <blockquote class="quote"><p>“Heme aquí, envíame a mí.”</p><cite>Isaías 6:8 · Un versículo que me acompaña</cite></blockquote>
+    </div>
+  </section>
+
+  <section class="contact" id="contacto" aria-labelledby="contact-title"><div class="wrap contact-grid"><div><span class="eyebrow">05 / Contacto</span><h2 id="contact-title">Conversemos.</h2><p>Para oportunidades de desarrollo de software, proyectos o colaboración en investigación.</p></div><div><a class="email-link" href="mailto:enzo.fuentes@ucsp.edu.pe">enzo.fuentes@ucsp.edu.pe <span aria-hidden="true">↗</span></a><div class="contact-links"><a href="https://github.com/enzoaldhairfuentesapaza" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="assets/CV_Enzo_Fuentes_Profesional.pdf" download>Descargar CV ↓</a><a href="https://wa.me/51953770220" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></div></div></div></section>
+</main>
+<footer class="site-footer"><div class="wrap footer-grid"><span>© 2026 Enzo Aldhair Fuentes Apaza · Arequipa, Perú</span><a href="#inicio">Volver al inicio ↑</a></div></footer>
+<dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><span id="dialog-type">Proyecto</span><button class="dialog-close" aria-label="Cerrar detalle">×</button></div><div class="dialog-body"><h2 id="dialog-title"></h2><div id="dialog-status" class="status"></div><p id="dialog-description"></p><p id="dialog-detail"></p><div id="dialog-classification" class="project-labels"></div><h3 class="dialog-subtitle">Herramientas y tecnologías</h3><div class="tags" id="dialog-tags"></div><div class="dialog-links" id="dialog-links"></div></div></dialog>
 </body>
 </html>
