@@ -24,3 +24,11 @@
 @media(max-width:1020px){.hero h1{font-size:55px}.language-inventory{grid-template-columns:1fr 1.3fr;gap:25px}.working-style{gap:5px 25px;padding:28px}}
 @media(max-width:760px){.personal-name{font-size:23px}.personal-name small{display:block!important;font-size:9px}.hero h1{font-size:clamp(41px,9vw,59px)}.hero-personality{font-size:12px}.hero h1 em{text-decoration-thickness:2px;text-underline-offset:8px}.portrait-side:after{top:9px;right:7px;font-size:43px}.portrait-label{font-size:17px}.language-inventory{grid-template-columns:1fr;gap:17px;margin-top:30px}.language-cloud>span{font-size:11px;padding:6px 10px}.working-style{display:block;padding:24px;margin-bottom:30px}.working-style h3{font-size:27px;margin:14px 0 18px}.working-style p{font-size:12px}.project-card{min-height:280px}}
 @media(prefers-reduced-motion:reduce){.hello-wave{animation:none}[data-reveal],.portrait-frame,.interest-icon{transition:none!important}.reveal-pending{opacity:1;transform:none}}
+
+/* Datos personales: se adaptan al ancho disponible. */
+.personal-facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;margin:2rem 0;padding:1.5rem 0;border-top:1px solid #cbd5cf;border-bottom:1px solid #cbd5cf}
+.personal-facts dt{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:#52675e;margin-bottom:.4rem}
+.personal-facts dd{margin:0;font-weight:600}
+.technical-reading li{margin:.8rem 0;line-height:1.7}
+@media(max-width:700px){.personal-facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:380px){.personal-facts{grid-template-columns:1fr}}

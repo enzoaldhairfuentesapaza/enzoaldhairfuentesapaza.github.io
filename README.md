@@ -1,6 +1,6 @@
 # Portafolio de Enzo Aldhair Fuentes Apaza
 
-Página personal en español: desarrollo de software, investigación en IA, 14 proyectos, habilidades, formación y una sección personal. Incluye búsqueda y filtros, detalles de proyectos, animaciones al desplazarse, menú móvil y descarga del CV profesional de dos páginas.
+Página personal en español: ingeniería de software, desarrollo full stack, liderazgo de proyectos e inteligencia artificial, 14 proyectos, habilidades, formación y una sección personal. Incluye búsqueda y filtros, detalles de proyectos, animaciones al desplazarse, menú móvil y descarga del CV profesional de dos páginas.
 
 ## Subir a tu repositorio
 
@@ -47,3 +47,7 @@ Python 3 usa únicamente su biblioteca estándar. El resultado actualiza `script
 ## Contenido publicado
 
 El paquete contiene los archivos de la página y su CV descargable. No incluye el historial Git, credenciales ni configuración de la plataforma donde se preparó la página. Los proyectos en desarrollo se identifican como tales. Las animaciones respetan la preferencia del sistema de reducir movimiento.
+
+## Actualización del perfil
+
+Incluye becario de PhawAI + TaReCDa 2025, certificados indicados, enfoques ágiles y dirigidos por planes, competencias ampliadas de IA, lecturas técnicas y datos personales en «Más sobre mí». Los rótulos de certificado no crean enlaces a documentos que no se hayan proporcionado.

@@ -1,10 +1,10 @@
 # Proyectos de Enzo Aldhair Fuentes Apaza
 
-Catálogo profesional · Actualizado el 11 de octubre de 2026
+Catálogo profesional · Actualizado el 24 de octubre de 2026
 
 GitHub: https://github.com/enzoaldhairfuentesapaza
 
-Los estados de despliegue indicados corresponden a la información de Enzo. Las descripciones se contrastaron con los README y, cuando fue necesario, con archivos de los repositorios.
+Proyectos comerciales, institucionales y académicos de desarrollo de software, inteligencia artificial y sistemas.
 
 ## 1. DH & DM Maquinarias
 
@@ -18,7 +18,6 @@ Integra cuentas de cliente, contenido editable, promociones, cotizaciones, gener
 **Tipo:** Proyecto para cliente. **Estado:** En producción.
 **Repositorio:** https://github.com/enzoaldhairfuentesapaza/DH-DM-Maquinarias-Web
 **Aplicación:** https://www.dh-dm-maquinarias.com/
-**Nota:** Despliegue indicado por Enzo. La disponibilidad del hosting no se comprobó en esta revisión.
 
 ## 2. XAI en segmentación MRI 3D
 
@@ -31,7 +30,6 @@ Compara fidelidad, infidelidad, AUC Deletion/Insertion y tiempo de cómputo. En 
 **Tecnologías o conceptos:** Python, PyTorch, 3D U-Net, Grad-CAM, LIME.
 **Tipo:** Investigación académica. **Estado:** Experimento académico.
 **Repositorio:** https://github.com/enzoaldhairfuentesapaza/Implementacion-de-metodos-post-hoc-de-interpretabilidad-en-la-segmentacion-3D-de-tumores-cerebrales
-**Nota:** Las métricas proceden del README del proyecto.
 
 ## 3. Sistema de Almacenamiento Inteligente
 
@@ -44,7 +42,6 @@ Cada empresa dispone de una instalación independiente. Incluye importación y e
 **Tecnologías o conceptos:** FastAPI, React, PostgreSQL, Docker.
 **Tipo:** Sistema empresarial. **Estado:** En desarrollo.
 **Repositorio:** https://github.com/enzoaldhairfuentesapaza/Sistema-almacenamiento-inteligente
-**Nota:** Versión documentada en el repositorio: 0.2.2.
 
 ## 4. Repositorio de planes de trabajo CEDHI
 
@@ -57,7 +54,6 @@ Desarrollado para CEDHI. El código permite consultar documentos mediante búsqu
 **Tecnologías o conceptos:** PHP, MySQL, Bootstrap, JavaScript.
 **Tipo:** Proyecto institucional. **Estado:** Desplegado.
 **Repositorio:** https://github.com/enzoaldhairfuentesapaza/Repositorio-de-Planes-de-Trabajo-CEDHI
-**Nota:** Despliegue indicado por Enzo; falta el enlace público de la instalación.
 
 ## 5. Cotizador web HDM Maquinarias
 
@@ -71,7 +67,6 @@ Permite registrar al cliente, editar los productos, ajustar precios y generar un
 **Tipo:** Herramienta comercial. **Estado:** Desplegado.
 **Repositorio:** https://github.com/enzoaldhairfuentesapaza/Sistema-Web-de-Cotizaciones-HDM-Maquinarias
 **Aplicación:** https://sage-swan-19bb56.netlify.app/
-**Nota:** Despliegue indicado por Enzo. La disponibilidad del hosting no se comprobó en esta revisión.
 
 ## 6. Calculadora de cotizaciones HDM
 
@@ -84,7 +79,6 @@ La interfaz divide el cálculo en tres pasos y conserva un historial de las oper
 **Tecnologías o conceptos:** Flutter, Dart.
 **Tipo:** Aplicación móvil. **Estado:** Desplegado.
 **Repositorio:** https://github.com/enzoaldhairfuentesapaza/APP-Calculadora-Cotizaciones-HDM
-**Nota:** Despliegue indicado por Enzo; falta el enlace de descarga o demostración.
 
 ## 7. DistributedNeuralNetUDP
 
@@ -97,7 +91,6 @@ El maestro ejecuta el forward pass, distribuye las particiones y promedia los gr
 **Tecnologías o conceptos:** Python, C++, UDP, pybind11.
 **Tipo:** Proyecto académico en equipo. **Estado:** Proyecto académico.
 **Repositorio:** https://github.com/enzoaldhairfuentesapaza/DistributedNeuralNetUDP
-**Nota:** La contribución individual de cada integrante no está detallada en el README.
 
 ## 8. PlanetHunter-AI
 
@@ -182,18 +175,3 @@ El código inicia un cliente Pyrogram a partir de configuración JSON y carga m�
 **Tecnologías o conceptos:** Python, Pyrogram, Telegram API.
 **Tipo:** Bots y automatización. **Estado:** Proyecto técnico.
 **Repositorio:** https://github.com/enzoaldhairfuentesapaza/Control-BOT
-
-## Información pendiente para completar el perfil
-
-- Semestre actual y fecha estimada de egreso.
-- Fechas de desarrollo y contribuciones individuales en proyectos en equipo.
-- Enlaces públicos de CEDHI y de la app Flutter.
-- LinkedIn, si existe, y correo de contacto preferido.
-- Capturas, videos y muestras de pintura o escritura, si se quieren añadir más adelante.
-
-## Fuentes del perfil
-
-- CV original y constancias escolares proporcionados por Enzo.
-- Carta de recomendación de septiembre de 2026: utilizada como respaldo del perfil académico; no se publica.
-- Selección oficial PhawAI 2025: https://www.phawai.org/phawai-tarecda-25/becarios
-- Repositorios enlazados en cada proyecto.
